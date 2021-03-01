@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "82939712062",
+    "firebase_url": "https://livestock-manager-363f2.firebaseio.com",
+    "project_id": "livestock-manager-363f2",
+    "storage_bucket": "livestock-manager-363f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82939712062:android:999661cd82e28d37ce376f",
+        "android_client_info": {
+          "package_name": "com.sih.livestockmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82939712062-94k13rdhiii41voep0k8mlcoa57stlpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sih.livestockmanager",
+            "certificate_hash": "b241fd1c537dd86a94100ab67afb57487f530695"
+          }
+        },
+        {
+          "client_id": "82939712062-rllosnuojkp8qiufeudhkgfttjplg9gu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfEvvgPdBI4_efPmXDjVFqhgM8bhpWPHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82939712062-rllosnuojkp8qiufeudhkgfttjplg9gu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

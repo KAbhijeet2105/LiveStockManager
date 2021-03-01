@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="@dimen/innerlayout_padding10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PieStats">
+
+
+    <TextView
+        android:layout_margin="@dimen/root_outer_padding"
+        android:text="@string/stats_title"
+        android:textSize="@dimen/little_large_text34"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart_stats"
+        android:layout_margin="@dimen/root_outer_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

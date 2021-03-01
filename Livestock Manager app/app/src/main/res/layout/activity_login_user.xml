@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginUser"
+    android:orientation="vertical"
+    android:background="@color/mainBack"
+    android:padding="@dimen/root_outer_padding"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/ImgVw_login_logo"
+        android:layout_width="@dimen/login_logo_width"
+        android:layout_height="@dimen/login_logo_height"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        android:transitionName="splashmain_logo"
+        />
+
+    <TextView
+           android:id="@+id/txt_login_wlcome"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/login_welcome"
+           android:text="@string/login_welcome_txt"
+           android:textColor="@color/colorPrimaryDark"
+           android:transitionName="splash_text"
+        />
+
+     <TextView
+         android:id="@+id/txt_login_slogan"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/login_slogan"
+         android:text="@string/login_slogan_txt"
+         android:textColor="@color/colorPrimaryDark"
+         android:transitionName="register_usrname"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        >
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/edtxt_login_email"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:hint="@string/login_usernm_hint"
+             android:transitionName="register_email"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_login_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/login_password_hint"
+            app:passwordToggleEnabled="true"
+            android:transitionName="register_password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/micro_margin5"
+            android:layout_marginBottom="@dimen/micro_margin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:transitionName="register_oldusr"
+            android:visibility="gone"
+
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/register_usr_isAdmin"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/mini_text18"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+
+                />
+
+            <CheckBox
+                android:id="@+id/login_chkbx_isadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="false"
+                />
+
+        </LinearLayout>
+
+
+        <android.widget.Button
+            android:id="@+id/btn_login_loginbtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/little_text26"
+            android:textColor="@color/mainText"
+            android:text="@string/login_btn_txt"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/micro_margin5"
+            android:layout_marginBottom="@dimen/micro_margin5"
+            android:transitionName="register_btnreg"
+
+            />
+
+        <TextView
+            android:id="@+id/txtVw_login_newUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/login_forget_password"
+            android:text="@string/login_newuser_txt"
+            android:background="@color/BackTransperent"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="@dimen/micro_margin5"
+            android:transitionName="register_oldusr"
+            />
+
+        <TextView
+            android:id="@+id/txtVw_login_forgetPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/login_forget_password"
+            android:text="@string/login_forget_password"
+            android:background="@color/BackTransperent"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="@dimen/micro_margin5"
+            android:transitionName="register_isadmin"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

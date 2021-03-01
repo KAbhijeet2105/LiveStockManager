@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/root_outer_padding"
+
+    tools:context=".AddAnimal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+             android:gravity="center"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+             android:textStyle="bold"
+            android:text="@string/add_animal_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/little_large_text34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_animal_category"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/mini_text18"
+                android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+                />
+
+            <Spinner
+               android:layout_weight="1"
+                android:id="@+id/add_animal_spinner_animal_category"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_add_Animal_Breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/add_animal_breed"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/mini_text18"
+            android:text="@string/register_usr_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+            />
+
+        <RadioGroup
+        android:id="@+id/add_animal_rdb_grp_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+        >
+
+        <RadioButton
+            android:id="@+id/add_animal_rdb_btn_male"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/register_usr_gender_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="animalGenderSelect"
+            />
+
+        <RadioButton
+            android:id="@+id/add_animal_rdb_btn_female"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/register_usr_gender_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="animalGenderSelect"
+            />
+
+    </RadioGroup>
+
+
+
+            <TextView
+                android:id="@+id/txtVw_add_animal_DOB"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/mini_text18"
+                android:text="@string/add_animal_select_dob"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+                />
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_add_animal_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/add_animal_select_use"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_add_animal_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/add_animal_wgt_inkg"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/micro_margin5"
+            android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/add_animal_isalive"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/mini_text18"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                />
+
+            <CheckBox
+                android:id="@+id/register_chkbx_isalive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="true"
+                />
+
+
+        </LinearLayout>
+
+
+        <android.widget.Button
+            android:layout_marginTop="@dimen/add_animal_gap_margin5"
+            android:id="@+id/btn_add_animal_addanimal"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/login_slogan"
+            android:textColor="@color/mainText"
+            android:text="@string/add_animal_add_animal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/micro_margin5"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+<!--age input-->
+<!--<com.google.android.material.textfield.TextInputLayout-->
+<!--android:id="@+id/edtxt_add_animal_age"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--android:hint="@string/add_animal_select_age"-->
+<!--android:layout_marginBottom="@dimen/add_animal_gap_margin5"-->
+
+<!--    >-->
+<!--<com.google.android.material.textfield.TextInputEditText-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"/>-->
+
+<!--</com.google.android.material.textfield.TextInputLayout>-->

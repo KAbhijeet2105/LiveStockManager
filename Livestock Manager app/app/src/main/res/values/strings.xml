@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Livestock Manager</string>
+
+    <string name="login_welcome_txt">Welcome to Livestock Manager</string>
+    <string name="register_welcome_txt">Welcome</string>
+    <string name="login_slogan_txt">Login to continue</string>
+    <string name="register_slogan_txt">Register here to continue</string>
+
+    <string name="login_btn_txt">Login</string>
+    <string name="register_btn_txt">Register</string>
+    <string name="login_newuser_txt">New User? Sign up</string>
+    <string name="register_olduser_txt">Registered already? Login here.</string>
+
+    <string name="login_usernm_hint">Email</string>
+    <string name="register_user_fullname_hint">Full  Name</string>
+    <string name="login_password_hint">Password</string>
+    <string name="register_email_hint">Email</string>
+    <string name="login_forget_password">Forget Password?</string>
+    <string name="register_usr_isAdmin">is admin: </string>
+    <string name="register_usr_phoneNo_hint">Phone Number</string>
+    <string name="register_usr_ahoid_hint">A.H.O id</string>
+    <string name="register_usr_aadhar_hint">AADHAR Card Number:</string>
+    <string name="register_usr_gender_male">Male</string>
+    <string name="register_usr_gender_female">Female</string>
+    <string name="register_usr_gender">Gender:</string>
+
+
+    //dashboard card component
+
+
+    <string name="userdash_title">My Dashboard User</string>
+
+    <string name="dashboard_card_details">My request</string>
+    <string name="dashboard_card_myanimals">My Animals</string>
+    <string name="dashboard_card_add_new_animal">Add Animal</string>
+    <string name="dashboard_card_scan_qr">Scan animal QR</string>
+
+    //add animal
+
+    <string name="add_animal_title"> Add Animal </string>
+
+    <string name="add_animal_category">Category: </string>
+    <string name="add_animal_breed">Breed: </string>
+    <string name="add_animal_select_dob">Select D.O.B.</string>
+    <string name="add_animal_select_age">Animal Age: </string>
+    <string name="add_animal_select_use">Use: </string>
+    <string name="add_animal_isalive">Is alive: </string>
+    <string name="add_animal_wgt_inkg">Weight in K.G.</string>
+
+    <string name="add_animal_add_animal">Add Animal</string>
+
+    //My Animals
+
+    <string name="My_animals_title">My Animals</string>
+
+    //Animal Cards
+    <string name="my_animal_cards_animal_id">Animal ID: </string>
+
+    <string name="my_animal_cards_animal_category">Category: </string>
+    <string name="my_animal_cards_animal_breed">Breed: </string>
+
+
+    //Animal Details
+
+    <string name="my_animal_detail_weight">Weight: </string>
+    <string name="my_animal_detail_request_status">Request Approved: </string>
+    <string name="my_animal_detail_sell_animal">Sell</string>
+    <string name="my_animal_detail_register_death">Death</string>
+
+    //Admin Dashboard
+
+
+    <string name="admindash_title">My Dashboard Admin</string>
+    <string name="admindash_scanQR">Scan animal QR</string>
+
+    <string name="admindash_requests">Request</string>
+    <string name="admindash_requests_title">User Requests</string>
+    <string name="admindash_stats">Statistics</string>
+    <string name="admindash_quickstats">Quick stats</string>
+
+    //Admin request card
+    <string name="username">Username: </string>
+    <string name="user_id">User ID: </string>
+    <string name="animal_dob">Animal D.O.B.: </string>
+
+    //Admin req detail
+    <string name="user_region">Region: </string>
+    <string name="req_approve">Approve</string>
+    <string name="req_reject">Reject</string>
+    <string name="req_remark">Enter Remark</string>
+    <string name="req_review_complete">Complete Review</string>
+    <string name="req_review_title">Request Review</string>
+
+    // user dash
+
+    <string name="genrate_user_QR">Show my QR</string>
+
+
+    <string name="genrate_animal_QR">Generate QR code</string>
+
+
+    //User QR generate
+    <string name="btn_genrate_user_QR">Generate my QR code</string>
+
+    <string name="animal_info">Animal Information</string>
+    <string name="animal_qr_save_galary">Save QR  code</string>
+
+
+    <string name="animal_sell">Yes</string>
+    <string name="animal_no_sell">No</string>
+
+
+    // Statistics
+    <string name="stats_title">Statistics</string>
+
+
+    <string-array name="areas">
+        <item>Select your area here</item>
+        <item>589946 - Guntur>Amaravathi>Amaravathi</item>
+        <item>589939 - Guntur>Amaravathi>Attalur</item>
+        <item>589945 - Guntur>Amaravathi>Dharanikota</item>
+        <item>589943 - Guntur>Amaravathi>Didugu</item>
+        <item>589950 - Guntur>Amaravathi>Endroyi</item>
+        <item>589940 - Guntur>Amaravathi>Jupudi</item>
+        <item>589953 - Guntur>Amaravathi>Karlapudi</item>
+
+    </string-array>
+
+    <string-array name="categories">
+        <item>Select animal category here</item>
+        <item>Cow</item>
+        <item>Buffalo</item>
+        <item>Goat</item>
+        <item>Sheep</item>
+        <item>Bull</item>
+
+    </string-array>
+
+
+    <string-array name="req_status">
+        <item>Select request status here</item>
+        <item>Approved</item>
+        <item>Not Approved</item>
+        <item>All</item>
+    </string-array>
+
+
+</resources>

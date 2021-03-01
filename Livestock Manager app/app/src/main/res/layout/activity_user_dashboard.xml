@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDashboard">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/root_outer_padding">
+
+     <TextView
+         android:id="@+id/txtVw_useDash_title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/userdash_title"
+         android:textSize="@dimen/little_large_text34"
+         android:textColor="@color/colorPrimaryDark"
+        />
+
+  </RelativeLayout>
+
+        <GridLayout
+            android:layout_marginTop="@dimen/dashboard_card_layout_margin"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--  comp 2-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="@dimen/dashboard_card_elevation"
+                app:cardCornerRadius="@dimen/dashboard_card_corner_radious"
+                android:layout_margin="@dimen/dashboard_card_layout_margin"
+                android:onClick="goMyAnimals"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="@dimen/dashboard_card_linear_padding16"
+                    >
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="@dimen/dashboard_logo_width_mini"
+                        android:layout_height="@dimen/dashboard_logo_height_mini"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mini_text18"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="@dimen/dashboard_card_layout_margin"
+                        android:text="@string/dashboard_card_myanimals"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--    comp 3    -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="@dimen/dashboard_card_elevation"
+                app:cardCornerRadius="@dimen/dashboard_card_corner_radious"
+                android:layout_margin="@dimen/dashboard_card_layout_margin"
+                android:onClick="goAddAnimal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="@dimen/dashboard_card_linear_padding16"
+                    >
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="@dimen/dashboard_logo_width_mini"
+                        android:layout_height="@dimen/dashboard_logo_height_mini"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mini_text18"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="@dimen/dashboard_card_layout_margin"
+                        android:text="@string/dashboard_card_add_new_animal"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="@dimen/dashboard_card_elevation"
+                app:cardCornerRadius="@dimen/dashboard_card_corner_radious"
+                android:layout_margin="@dimen/dashboard_card_layout_margin"
+                android:onClick="goScanAnimalQR"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="@dimen/dashboard_card_linear_padding16"
+                    >
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="@dimen/dashboard_logo_width_mini"
+                        android:layout_height="@dimen/dashboard_logo_height_mini"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mini_text18"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="@dimen/dashboard_card_layout_margin"
+                        android:text="@string/dashboard_card_scan_qr"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="@dimen/dashboard_card_elevation"
+                app:cardCornerRadius="@dimen/dashboard_card_corner_radious"
+                android:layout_margin="@dimen/dashboard_card_layout_margin"
+                android:onClick="goMyQR"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="@dimen/dashboard_card_linear_padding16"
+                    >
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="@dimen/dashboard_logo_width_mini"
+                        android:layout_height="@dimen/dashboard_logo_height_mini"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mini_text18"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="@dimen/dashboard_card_layout_margin"
+                        android:text="@string/genrate_user_QR"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+   </LinearLayout>
+</ScrollView>

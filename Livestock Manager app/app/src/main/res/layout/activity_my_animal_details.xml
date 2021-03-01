@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/root_outer_padding"
+    android:layout_margin="@dimen/root_outer_padding"
+    tools:context=".MyAnimalDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_id"
+              android:text="@string/my_animal_cards_animal_id"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_category"
+              android:text="@string/my_animal_cards_animal_category"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_breed"
+              android:text="@string/my_animal_cards_animal_breed"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_weight"
+              android:text="@string/my_animal_detail_weight"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_use"
+              android:text="@string/add_animal_select_use"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_req_status"
+              android:text="@string/my_animal_detail_request_status"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_dob"
+              android:text="@string/add_animal_select_dob"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/txtVw_animal_detail_isAlive"
+              android:text="@string/add_animal_isalive"
+              android:textSize="@dimen/mini_text18"
+              android:textColor="@color/colorPrimaryDark"
+              android:layout_marginTop="@dimen/micro_margin5"
+              android:layout_marginBottom="@dimen/micro_margin5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+          <LinearLayout
+              android:weightSum="2"
+              android:layout_marginTop="@dimen/root_outer_padding"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+
+              <android.widget.Button
+                  android:layout_weight="1"
+                  android:id="@+id/btn_animal_detail_register_death"
+                  style="@style/Widget.MaterialComponents.Button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/little_text26"
+                  android:textColor="@color/mainText"
+                  android:text="@string/my_animal_detail_register_death"
+                  android:background="#E84342"
+                  android:layout_margin="@dimen/micro_margin5"
+                  />
+
+              <android.widget.Button
+                  android:layout_weight="1"
+                  android:id="@+id/btn_animal_detail_sellAnimal"
+                  style="@style/Widget.MaterialComponents.Button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/little_text26"
+                  android:textColor="@color/mainText"
+                  android:text="@string/my_animal_detail_sell_animal"
+                  android:background="@color/colorPrimaryDark"
+                  android:layout_margin="@dimen/micro_margin5"
+                 android:onClick="sellingMyAnimal"
+
+                  />
+
+
+
+          </LinearLayout>
+
+          <android.widget.Button
+
+              android:id="@+id/btn_animal_detail_showQR"
+              style="@style/Widget.MaterialComponents.Button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/little_text26"
+              android:textColor="@color/mainText"
+              android:text="@string/genrate_animal_QR"
+              android:background="@color/colorPrimaryDark"
+              android:onClick="AnimalQRDlg"
+
+              android:layout_margin="@dimen/micro_margin5"
+
+
+              />
+
+
+      </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

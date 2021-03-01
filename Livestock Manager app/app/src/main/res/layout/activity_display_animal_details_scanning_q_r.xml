@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayAnimalDetailsScanningQR">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="@dimen/root_outer_padding"
+            android:padding="@dimen/micro_margin5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+
+                android:text="@string/animal_info"
+                android:gravity="center"
+                android:layout_margin="@dimen/root_outer_padding"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="@dimen/little_large_text34"
+                android:textColor="@color/mainText"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_animal_id"
+                android:text="@string/my_animal_cards_animal_id"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_user_id"
+                android:text="@string/user_id"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_user_name"
+                android:text="@string/username"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_user_phone_no"
+                android:text="@string/register_usr_phoneNo_hint"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_animal_age"
+                android:text="@string/add_animal_select_age"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_user_region"
+                android:text="@string/user_region"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_category"
+                android:text="@string/my_animal_cards_animal_category"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_breed"
+                android:text="@string/my_animal_cards_animal_breed"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_weight"
+                android:text="@string/my_animal_detail_weight"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_use"
+                android:text="@string/add_animal_select_use"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_req_status"
+                android:text="@string/my_animal_detail_request_status"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_dob"
+                android:text="@string/animal_dob"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_qr_detail_isAlive"
+                android:text="@string/add_animal_isalive"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

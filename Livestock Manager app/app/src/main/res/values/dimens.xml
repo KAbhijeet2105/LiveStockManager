@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  String size  -->
+
+    <dimen name="splashTitle">60sp</dimen>
+    <dimen name="login_welcome">36sp</dimen>
+    <dimen name="register_welcome">26sp</dimen>
+    <dimen name="login_slogan">20sp</dimen>
+
+    <dimen name="little_text26">26sp</dimen>
+    <dimen name="little_large_text34">34sp</dimen>
+    <dimen name="mini_text18">18sp</dimen>
+    <dimen name="mini_text16">18sp</dimen>
+    <dimen name="mini_text20">22sp</dimen>
+
+
+    <dimen name="micro_text14">14sp</dimen>
+
+
+    <dimen name="login_forget_password">20sp</dimen>
+
+
+  <!-- View size -->
+
+    <dimen name="login_logo_width">100dp</dimen>
+    <dimen name="login_logo_height">100dp</dimen>
+    <dimen name="login_logo_width_mini">50dp</dimen>
+    <dimen name="login_logo_height_mini">50dp</dimen>
+    <dimen name="dashboard_logo_width_mini">80dp</dimen>
+    <dimen name="dashboard_logo_height_mini">80dp</dimen>
+
+
+    <dimen name="owner_QR_show">340dp</dimen>
+
+    <dimen name="root_outer_padding">20dp</dimen>
+
+    <dimen name="innerlayout_padding10">10dp</dimen>
+    <dimen name="btn_width">260dp</dimen>
+
+
+
+
+    <dimen name="add_animal_gap_margin5">8dp</dimen>
+
+    <dimen name="micro_margin5">5dp</dimen>
+    <dimen name="dashboard_card_elevation">6dp</dimen>
+    <dimen name="dashboard_card_corner_radious">12dp</dimen>
+    <dimen name="dashboard_card_layout_margin">12dp</dimen>
+    <dimen name="dashboard_card_linear_padding16">16dp</dimen>
+
+    <dimen name="register_title_minus_margin20">-10dp</dimen>
+
+
+
+
+</resources>

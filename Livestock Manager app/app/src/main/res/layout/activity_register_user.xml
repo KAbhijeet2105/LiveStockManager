@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser"
+    android:orientation="vertical"
+    android:background="@color/mainBack"
+    android:padding="@dimen/root_outer_padding"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ImgVw_register_logo"
+        android:layout_width="@dimen/login_logo_width_mini"
+        android:layout_height="@dimen/login_logo_height_mini"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        android:transitionName="splashmain_logo"
+        />
+
+    <TextView
+        android:id="@+id/Txt_register_wlcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/register_welcome"
+        android:text="@string/register_welcome_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:transitionName="splash_text"
+        android:layout_marginTop="@dimen/register_title_minus_margin20"
+        />
+
+
+    <TextView
+        android:id="@+id/Txt_register_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/login_slogan"
+        android:text="@string/register_slogan_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:transitionName="register_usrname"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/innerlayout_padding10"
+        android:layout_marginBottom="@dimen/innerlayout_padding10"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_register_usr_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/register_user_fullname_hint"
+            android:transitionName="register_email"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_register_usr_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/register_email_hint"
+            android:transitionName="register_isadmin"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_register_usr_phoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/register_usr_phoneNo_hint"
+            android:transitionName="register_btnreg"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_register_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/login_password_hint"
+            app:passwordToggleEnabled="true"
+            android:transitionName="register_btnreg"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/micro_margin5"
+            android:layout_marginBottom="@dimen/micro_margin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:transitionName="register_oldusr"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/register_usr_isAdmin"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/mini_text18"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                />
+
+            <CheckBox
+                android:id="@+id/register_chkbx_isadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_weight="2"
+                android:checked="false"
+                />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_marginBottom="@dimen/micro_margin5"
+            android:id="@+id/register_spinner_user_area"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtxt_register_usr_aho_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/register_usr_ahoid_hint"
+            android:transitionName="register_btnreg"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        no admin user data-->
+        <LinearLayout
+            android:id="@+id/register_layout_no_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtxt_register_usr_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/register_usr_aadhar_hint"
+                android:transitionName="register_btnreg"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/mini_text18"
+                android:text="@string/register_usr_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioGroup
+                android:id="@+id/register_user_rdb_grp_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/register_user_rdb_btn_male"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/register_usr_gender_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="genderSelect"
+                    />
+
+                <RadioButton
+                    android:id="@+id/register_user_rdb_btn_female"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/register_usr_gender_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="genderSelect"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_register_registerbtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/login_slogan"
+            android:textColor="@color/mainText"
+            android:text="@string/register_btn_txt"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/micro_margin5"
+            android:transitionName="register_oldusr"
+
+            />
+
+        <TextView
+            android:id="@+id/txtVw_register_oldusr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/micro_margin5"
+            android:background="@color/BackTransperent"
+            android:gravity="center"
+            android:text="@string/register_olduser_txt"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/micro_text14"
+            android:transitionName="register_oldusr"
+
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

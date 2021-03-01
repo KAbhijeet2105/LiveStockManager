@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/root_outer_padding"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ImgVw_custom_dialog_show_animal_qr"
+        android:layout_marginTop="@dimen/root_outer_padding"
+        android:layout_marginBottom="@dimen/root_outer_padding"
+        android:layout_gravity="center"
+
+        android:layout_width="@dimen/owner_QR_show"
+        android:layout_height="@dimen/owner_QR_show"
+        />
+
+    <android.widget.Button
+
+        android:id="@+id/btn_animal_save_animal_QR"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/little_text26"
+        android:textColor="@color/mainText"
+        android:text="@string/animal_qr_save_galary"
+        android:background="@color/colorPrimaryDark"
+       android:layout_margin="@dimen/root_outer_padding"
+
+        />
+
+
+</LinearLayout>

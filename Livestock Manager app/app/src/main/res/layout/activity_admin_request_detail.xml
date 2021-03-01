@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/root_outer_padding"
+    android:orientation="vertical"
+    tools:context=".AdminRequestDetail">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+
+                android:text="@string/req_review_title"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="@dimen/little_large_text34"
+                android:textColor="@color/mainText"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/txtVw_request_admin_animal_id"
+                android:text="@string/my_animal_cards_animal_id"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_request_admin_user_id"
+                android:text="@string/user_id"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_request_admin_user_name"
+                android:text="@string/username"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_request_admin_user_phone_no"
+                android:text="@string/register_usr_phoneNo_hint"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:id="@+id/txtVw_request_admin_animal_age"
+                android:text="@string/add_animal_select_age"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_request_admin_user_region"
+                android:text="@string/user_region"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_category"
+                android:text="@string/my_animal_cards_animal_category"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_breed"
+                android:text="@string/my_animal_cards_animal_breed"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_weight"
+                android:text="@string/my_animal_detail_weight"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_use"
+                android:text="@string/add_animal_select_use"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_req_status"
+                android:text="@string/my_animal_detail_request_status"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_dob"
+                android:text="@string/animal_dob"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtVw_admin_request_isAlive"
+                android:text="@string/add_animal_isalive"
+                android:textSize="@dimen/mini_text18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/micro_margin5"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/root_outer_padding"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+                    android:id="@+id/rdbtnGrp_admin_detail_req_chk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/admin_req_detail_rdb_btn_approve"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/req_approve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="ReqStateSelect"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/admin_req_detail_rdb_btn_reject"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/req_reject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="ReqStateSelect"
+                        />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtxt_admin_detail_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/req_remark"
+                android:layout_marginBottom="@dimen/add_animal_gap_margin5"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <android.widget.Button
+               android:layout_gravity="center"
+                android:layout_marginTop="@dimen/add_animal_gap_margin5"
+                android:id="@+id/btn_admin_detail_req_review"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/login_slogan"
+                android:textColor="@color/mainText"
+                android:text="@string/req_review_complete"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/micro_margin5"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

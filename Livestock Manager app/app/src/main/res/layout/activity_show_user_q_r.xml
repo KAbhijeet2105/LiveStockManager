@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/root_outer_padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowUserQR">
+
+    <TextView
+        android:id="@+id/txtVw_generate_QR_user_id"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/root_outer_padding"
+        android:textStyle="bold"
+        android:text="My User id:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/little_text26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/root_outer_padding"
+            android:layout_marginBottom="@dimen/root_outer_padding"
+            android:id="@+id/imgVw_owner_QR_generated"
+            android:layout_width="@dimen/owner_QR_show"
+            android:layout_height="@dimen/owner_QR_show"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+
+
+    <android.widget.Button
+        android:layout_margin="@dimen/root_outer_padding"
+        android:id="@+id/btn_generate_user_QR"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/login_slogan"
+        android:textColor="@color/mainText"
+        android:text="@string/btn_genrate_user_QR"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/micro_margin5"
+        />
+
+
+</LinearLayout>

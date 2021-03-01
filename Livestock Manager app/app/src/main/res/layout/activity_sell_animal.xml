@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SellAnimal">
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="@dimen/root_outer_padding"
+        android:layout_marginLeft="@dimen/root_outer_padding"
+        android:layout_marginRight="@dimen/root_outer_padding"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/little_text26"
+        android:text="Are you Sure?"
+        android:id="@+id/sell_animal_show_user_tosell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.widget.Button
+            android:layout_weight="1"
+            android:id="@+id/btn_animal_sell"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/little_text26"
+            android:textColor="@color/mainText"
+            android:text="@string/animal_sell"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="@dimen/micro_margin5"
+            />
+
+        <android.widget.Button
+            android:layout_weight="1"
+            android:id="@+id/btn_animal_dont_sell"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/little_text26"
+            android:textColor="@color/mainText"
+            android:text="@string/animal_no_sell"
+            android:background="#E84342"
+            android:layout_margin="@dimen/micro_margin5"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

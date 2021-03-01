@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dashboard_card_corner_radious"
+    app:cardElevation="@dimen/dashboard_card_elevation"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="@dimen/micro_margin5"
+    android:padding="@dimen/root_outer_padding">
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+    <ImageView
+        android:layout_weight="2"
+        android:src="@drawable/animal_icon"
+        android:layout_width="@dimen/login_logo_width"
+        android:layout_height="@dimen/login_logo_height"
+        />
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/micro_margin5"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/my_animal_card_animal_id"
+            android:text="@string/my_animal_cards_animal_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/mini_text16"
+            />
+        <TextView
+            android:id="@+id/my_animal_card_animal_category"
+            android:text="@string/my_animal_cards_animal_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/mini_text18"
+            />
+        <TextView
+            android:id="@+id/my_animal_card_animal_breed"
+            android:text="@string/my_animal_cards_animal_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/mini_text18"
+            />
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
